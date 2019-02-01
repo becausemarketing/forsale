@@ -11,9 +11,8 @@
 #list span::before { 
     content: "\f100";
     font-family: FontAwesome;
-    font-size: 10px;
+    font-size: 5px;
     float: left;
-    padding-left: 10px;
     color: #0058a1;
 }
 #reset {
