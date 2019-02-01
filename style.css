@@ -1,14 +1,65 @@
 html,
 body {
 	height: 100%;
+    width: 100%;
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
 }
 #map {
+    float: left;
 	height: 100%;
+    width: 80%;
+}
+#list {
+    text-align: center;
+    border-bottom: 1px solid #dedede;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#list span::before { 
+    content: "\f100";
+    font-family: FontAwesome;
+    font-size: 40px;
+    float: left;
+    padding-left: 50px;
+    color: #0058a1;
+}
+#reset {
+    text-align: center;
+    padding-top: 15px;
+}
+#reset button{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    background-color: #0058a1;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
 }
 
+#row {
+    display: flex;
+}
+#column img {
+    height: 95%;
+    width: 80%;
+}
+#column {
+    flex: 40%;
+}
+#column a {
+	text-decoration: none;
+    color: #0058a1;
+    font-family: sans-serif;
+    font-weight: 700;
+}
 a {
 	text-decoration: none;
+    color: #2d2d2d;
+    font-family: sans-serif;
 }

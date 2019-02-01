@@ -1,60 +1,65 @@
 function initMap() {
 
 	var thompson = {
-		info: '<strong>N. Thompson</strong><br>\
-					704 N. Thompson Street<br> Conroe, TX 77301<br>\
-					<a href="https://goo.gl/maps/jKNEDz4SyyH2">Get Directions</a>',
+		info: '<div id="row"><div id="column"><img src="https://static.wixstatic.com/media/d12b1c_458766e83dcd491782d04bb1246cd6cd~mv2.jpg"></div>\
+                    <div id="column"><strong>N. Thompson</strong><br>\
+					704 N. Thompson Street <br> Conroe, TX 77301<br>\
+					<a href="https://becausemarketing.wixsite.com/promedrealty/11657081">View Listing</a></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
-            scaledSize: new google.maps.Size(64, 64)
+            scaledSize: new google.maps.Size(96, 96)
         },
 		lat: 30.315419,
 		long: -95.457839 
 	};
 
 	var sloop336 = {
-		info: '<strong>South Loop 336</strong><br>\
+		info: '<div id="row"><div id="column"><img src="https://static.wixstatic.com/media/d12b1c_03c1a5efd94e48ac8c7ca306e3545bf4~mv2.jpg"></div>\
+                    <div id="column"><strong>South Loop 336</strong><br>\
 					2010 S. Loop 336 West<br> Conroe, TX 77304<br>\
-					<a href="https://goo.gl/maps/PHfsWTvgKa92">Get Directions</a>',
+					<a href="https://becausemarketing.wixsite.com/promedrealty/2010-loop-336">View Listing</a></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
-            scaledSize: new google.maps.Size(64, 64)
+            scaledSize: new google.maps.Size(96, 96)
         },
 		lat: 30.285230,
 		long: -95.481558
 	};
 
 	var riverwood = {
-		info: '<strong>Riverwood</strong><br>\r\
+		info: '<div id="row"><div id="column"><img src="https://static.wixstatic.com/media/d12b1c_2c2c4f344f324c5ba47cf93cee03800e~mv2.jpg"></div>\
+                    <div id="column"><strong>Riverwood</strong><br>\
 					800 Riverwood Court<br> Conroe, TX 77304<br>\
-					<a href="https://goo.gl/maps/QGUrqZPsYp92">Get Directions</a>',
+					<a href="https://becausemarketing.wixsite.com/promedrealty/800-riverwood-ct">View Listing</a></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
-            scaledSize: new google.maps.Size(64, 64)
+            scaledSize: new google.maps.Size(96, 96)
         },
 		lat: 30.284683,
 		long: -95.465154 
 	};
     
     var fourthst = {
-		info: '<strong>South 4th Street</strong><br>\r\
+		info: '<div id="row"><div id="column"><img src="https://static.wixstatic.com/media/d12b1c_d8484e7d3a6f42b69a80aa7deaecbe00~mv2.jpg"></div>\
+                    <div id="column"><strong>South 4th Street</strong><br>\
 					1006 S. 4th Street<br> Crockett, TX 75835<br>\
-					<a href="https://goo.gl/maps/QGUrqZPsYp92">Get Directions</a>',
+					<a href="https://becausemarketing.wixsite.com/promedrealty/1006-s-4th">View Listing</a></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
-            scaledSize: new google.maps.Size(64, 64)
+            scaledSize: new google.maps.Size(96, 96)
         },
 		lat: 31.303973,
 		long: -95.459155  
 	};
 
     var loop304 = {
-		info: '<strong>NW Loop 304</strong><br>\r\
+		info: '<div id="row"><div id="column"><img src="https://static.wixstatic.com/media/d12b1c_437e298f285c489497a6c324872e3e56~mv2.jpg"></div>\
+                    <div id="column"><strong>NW Loop 304</strong><br>\
 					200 NW Loop 304<br> Crockett, TX 75835<br>\
-					<a href="https://goo.gl/maps/QGUrqZPsYp92">Get Directions</a>',
+					<a href="https://becausemarketing.wixsite.com/promedrealty/200-nwloop-304">View Listing</a></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
-            scaledSize: new google.maps.Size(64, 64)
+            scaledSize: new google.maps.Size(96, 96)
         },
 		lat: 31.331857 ,
 		long: -95.471048  
@@ -235,9 +240,13 @@ function initMap() {
             ]
 	});
 
-	var infowindow = new google.maps.InfoWindow({});
+	var infowindow = new google.maps.InfoWindow({
+            maxWidth: 250
+    });
 
 	var marker, i;
+    var markers = [];
+    var bounds = new google.maps.LatLngBounds();
 
 	for (i = 0; i < locations.length; i++) {
 		marker = new google.maps.Marker({
@@ -245,6 +254,9 @@ function initMap() {
 			map: map,
             icon: locations[i][3]
 		});
+        markers.push(marker);
+        
+        bounds.extend(marker.position);
 
 		google.maps.event.addListener(marker, 'click', (function (marker, i) {
 			return function () {
@@ -253,4 +265,16 @@ function initMap() {
 			}
 		})(marker, i));
 	}
+    map.fitBounds(bounds);
+
+    showme = function (index) {
+        map.setZoom(19);
+        map.setCenter(markers[index].getPosition());
+        infowindow.setContent(locations[index][0]);
+        infowindow.open(map, markers[index]);
+    }
+    
+    resetview = function () {
+        map.fitBounds(bounds);   
+    }
 }

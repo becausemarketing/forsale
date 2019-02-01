@@ -7,12 +7,38 @@
 	<title>Google Maps APIs</title>
 
 	<link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
-	<div id="map"></div>
-
+        <div id="map"></div>
+        
+        <a href="#" onclick="showme(0)"><div id="list">
+            <span> 704 N. Thompson Street <br/> Conroe, TX  77304</span>
+        </div></a>
+           
+        <a href="#" onclick="showme(1)"><div id="list">
+            <span> 2010 S. Loop 336 West<br> Conroe, TX 77304 </span>
+        </div></a>
+    
+        <a href="#" onclick="showme(2)"><div id="list">
+            <span> 800 Riverwood Court<br> Conroe, TX 77304 </span>
+        </div></a>
+        
+        <a href="#" onclick="showme(3)"><div id="list">
+            <span> 1006 S. 4th Street<br> Crockett, TX 75835 </span>
+        </div></a>
+    
+        <a href="#" onclick="showme(4)"><div id="list">
+            <span> 200 NW Loop 304<br> Crockett, TX 75835 </span>
+        </div></a>
+    
+        <a href="#" onclick="resetview()"><div id="reset">
+            <button> Reset View </button>
+        </div></a>
+    
 	<script src="promed-script.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj7vI6Ufk-HCVcpczRwLUrJZEfTrkzpQ0&callback=initMap"></script>
 </body>
