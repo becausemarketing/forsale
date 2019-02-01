@@ -25,6 +25,7 @@ body {
     font-family: FontAwesome;
     font-size: 5px;
     color: #0058a1;
+    float: left;
 }
 #reset {
     text-align: center;
