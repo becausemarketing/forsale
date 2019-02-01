@@ -91,7 +91,7 @@ body {
     width: 80%;
 }
 #column {
-    flex: 40%;
+    flex: 50%;
 }
 #column a {
 	text-decoration: none;
