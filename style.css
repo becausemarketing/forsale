@@ -1,3 +1,22 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  
+ #list {
+    text-align: center;
+    border-bottom: 1px solid #dedede;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+#list span::before { 
+    content: "\f100";
+    font-family: FontAwesome;
+    font-size: 20px;
+    float: left;
+    padding-left: 20px;
+    color: #0058a1;
+}
+    
 html,
 body {
 	height: 100%;
@@ -62,4 +81,6 @@ a {
 	text-decoration: none;
     color: #2d2d2d;
     font-family: sans-serif;
+}
+  
 }
