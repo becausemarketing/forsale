@@ -21,11 +21,7 @@ body {
     font-size: 8px;
 }
 #list span::before { 
-    content: "\f100";
-    font-family: FontAwesome;
-    font-size: 5px;
-    color: #0058a1;
-    float: left;
+    display: none;
 }
 #reset {
     text-align: center;
@@ -55,7 +51,7 @@ body {
 #map {
     float: left;
 	height: 100%;
-    width: 70%;
+    width: 80%;
 }
 #list {
     text-align: center;
@@ -87,7 +83,6 @@ body {
     font-family: sans-serif;
     font-size: 14px;
 }
-
 #row {
     display: flex;
 }
