@@ -28,9 +28,9 @@ body {
     padding-top: 15px;
 }
 #reset button{
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     border: 1px solid #e2e2e2;
     background-color: #0058a1;

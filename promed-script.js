@@ -241,7 +241,7 @@ function initMap() {
 	});
 
 	var infowindow = new google.maps.InfoWindow({
-            maxWidth: 250
+            maxWidth: 200
     });
 
 	var marker, i;
