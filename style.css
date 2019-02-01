@@ -38,6 +38,13 @@ body {
     font-family: sans-serif;
     font-size: 10px;
 }
+    #column img {
+    height: 95%;
+    width: 80%;
+}
+#column {
+    flex: 20%;
+}
 }
     
 html,
