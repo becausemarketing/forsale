@@ -4,7 +4,7 @@ function initMap() {
 		info: '<div id="row"><div id="column"><img src="https://static.wixstatic.com/media/d12b1c_458766e83dcd491782d04bb1246cd6cd~mv2.jpg"></div>\
                     <div id="column"><strong>N. Thompson</strong><br>\
 					704 N. Thompson Street <br> Conroe, TX 77301<br>\
-					<a href="https://becausemarketing.wixsite.com/promedrealty/11657081">View Listing</a></div></div>',
+					<a target="_parent" href="https://becausemarketing.wixsite.com/promedrealty/11657081">View Listing</a></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
             scaledSize: new google.maps.Size(96, 96)
@@ -17,7 +17,7 @@ function initMap() {
 		info: '<div id="row"><div id="column"><img src="https://static.wixstatic.com/media/d12b1c_03c1a5efd94e48ac8c7ca306e3545bf4~mv2.jpg"></div>\
                     <div id="column"><strong>South Loop 336</strong><br>\
 					2010 S. Loop 336 West<br> Conroe, TX 77304<br>\
-					<a href="https://becausemarketing.wixsite.com/promedrealty/2010-loop-336">View Listing</a></div></div>',
+					<a target="_parent" href="https://becausemarketing.wixsite.com/promedrealty/2010-loop-336">View Listing</a></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
             scaledSize: new google.maps.Size(96, 96)
@@ -30,7 +30,7 @@ function initMap() {
 		info: '<div id="row"><div id="column"><img src="https://static.wixstatic.com/media/d12b1c_2c2c4f344f324c5ba47cf93cee03800e~mv2.jpg"></div>\
                     <div id="column"><strong>Riverwood</strong><br>\
 					800 Riverwood Court<br> Conroe, TX 77304<br>\
-					<a href="https://becausemarketing.wixsite.com/promedrealty/800-riverwood-ct">View Listing</a></div></div>',
+					<a target="_parent" href="https://becausemarketing.wixsite.com/promedrealty/800-riverwood-ct">View Listing</a></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
             scaledSize: new google.maps.Size(96, 96)
@@ -43,7 +43,7 @@ function initMap() {
 		info: '<div id="row"><div id="column"><img src="https://static.wixstatic.com/media/d12b1c_d8484e7d3a6f42b69a80aa7deaecbe00~mv2.jpg"></div>\
                     <div id="column"><strong>South 4th Street</strong><br>\
 					1006 S. 4th Street<br> Crockett, TX 75835<br>\
-					<a href="https://becausemarketing.wixsite.com/promedrealty/1006-s-4th">View Listing</a></div></div>',
+					<a target="_parent" href="https://becausemarketing.wixsite.com/promedrealty/1006-s-4th">View Listing</a></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
             scaledSize: new google.maps.Size(96, 96)
@@ -56,7 +56,7 @@ function initMap() {
 		info: '<div id="row"><div id="column"><img src="https://static.wixstatic.com/media/d12b1c_437e298f285c489497a6c324872e3e56~mv2.jpg"></div>\
                     <div id="column"><strong>NW Loop 304</strong><br>\
 					200 NW Loop 304<br> Crockett, TX 75835<br>\
-					<a href="https://becausemarketing.wixsite.com/promedrealty/200-nwloop-304">View Listing</a></div></div>',
+					<a target="_parent" href="https://becausemarketing.wixsite.com/promedrealty/200-nwloop-304">View Listing</a></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
             scaledSize: new google.maps.Size(96, 96)
