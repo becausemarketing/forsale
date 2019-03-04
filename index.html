@@ -8,39 +8,108 @@
 
 	<link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 <body>
-        <div id="map"></div>
         
-        <a href="#" onclick="showme(0)"><div id="list">
-            <span> 704 N. Thompson Street <br/> Conroe, TX  77304</span>
-        </div></a>
-           
-        <a href="#" onclick="showme(1)"><div id="list">
-            <span> 2010 S. Loop 336 West<br> Conroe, TX 77304 </span>
-        </div></a>
-    
-        <a href="#" onclick="showme(2)"><div id="list">
-            <span> 800 Riverwood Court<br> Conroe, TX 77304 </span>
-        </div></a>
-        
-        <a href="#" onclick="showme(3)"><div id="list">
-            <span> 1006 S. 4th Street<br> Crockett, TX 75835 </span>
-        </div></a>
-    
-        <a href="#" onclick="showme(4)"><div id="list">
-            <span> 200 NW Loop 304<br> Crockett, TX 75835 </span>
-        </div></a>
-    
-        <a href="#" onclick="resetview()"><div id="reset">
-            <button> Reset View </button>
-        </div></a>
-    
-	<script src="promed-script.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj7vI6Ufk-HCVcpczRwLUrJZEfTrkzpQ0&callback=initMap"></script>
-</div>
-</body>
+        <div id="list">
+        <div class="row">
+            
+            <div class="col s12 m6 l3">
+              <div class="card medium">
+                <div class="card-image">
+                  <img src="https://static.wixstatic.com/media/d12b1c_458766e83dcd491782d04bb1246cd6cd~mv2.jpg">
+                </div>
+                <div class="card-content">
+                  <p> 704 N. Thompson Street <br> Conroe, TX 77304</p>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect waves-light light-blue darken-4 btn-small" href="#">View Listing</a>
+                  <a class="waves-effect waves-light grey btn-small" onclick="showme(0)" href="#"><i class="material-icons left">location_on</i>Map</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col s12 m6 l3">
+              <div class="card medium">
+                <div class="card-image">
+                  <img src="https://static.wixstatic.com/media/d12b1c_03c1a5efd94e48ac8c7ca306e3545bf4~mv2.jpg">
+                </div>
+                <div class="card-content">
+                  <p> 2010 S. Loop 336 West<br> Conroe, TX 77304 </p>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect waves-light light-blue darken-4 btn" href="#">View Listing</a>
+                  <a class="waves-effect waves-light grey btn-small" onclick="showme(1)" href="#"><i class="material-icons left">location_on</i>Map</a>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="col s12 m6 l3">
+              <div class="card medium">
+                <div class="card-image">
+                  <img src="https://static.wixstatic.com/media/d12b1c_2c2c4f344f324c5ba47cf93cee03800e~mv2.jpg">
+                </div>
+                <div class="card-content">
+                  <p> 800 Riverwood Court<br> Conroe, TX 77304 </p>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect waves-light light-blue darken-4 btn" href="#">View Listing</a>
+                  <a class="waves-effect waves-light grey btn-small" onclick="showme(2)" href="#"><i class="material-icons left">location_on</i>Map</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col s12 m6 l3">
+              <div class="card medium">
+                <div class="card-image">
+                  <img src="https://static.wixstatic.com/media/d12b1c_d8484e7d3a6f42b69a80aa7deaecbe00~mv2.jpg">
+                </div>
+                <div class="card-content">
+                  <p> 1006 S. 4th Street<br> Crockett, TX 75835 </p>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect waves-light light-blue darken-4 btn" href="#">View Listing</a>
+                  <a class="waves-effect waves-light grey btn-small" onclick="showme(3)" href="#"><i class="material-icons left">location_on</i>Map</a>
+                </div>
+              </div>
+            </div>
+                
+            <div class="col s12 m6 l3">
+              <div class="card medium">
+                <div class="card-image">
+                  <img src="https://static.wixstatic.com/media/d12b1c_437e298f285c489497a6c324872e3e56~mv2.jpg">
+                </div>
+                <div class="card-content">
+                  <p> 200 NW Loop 304<br> Crockett, TX 75835 </p>
+                </div>
+                <div class="card-action">
+                  <a class="waves-effect waves-light light-blue darken-4 btn" href="#">View Listing</a>
+                  <a class="waves-effect waves-light grey btn-small" onclick="showme(4)" href="#"><i class="material-icons left">location_on</i>Map</a>
+                </div>
+              </div>
+            </div>
+            
+            </div></div>
+            
+            <div id="map"></div>
+            
+                <a href="#" onclick="resetview()"><div id="reset">
+                    <button> Reset View </button>
+                </div></a>
+                    
+            
+            <script src="promed-script.js"></script>
+	        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj7vI6Ufk-HCVcpczRwLUrJZEfTrkzpQ0&callback=initMap"></script>
+            
+            </body>
 
 </html>

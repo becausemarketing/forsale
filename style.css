@@ -1,4 +1,4 @@
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 570px) {
 html,
 body {
 	height: 100%;
@@ -8,17 +8,25 @@ body {
 	line-height: 1.5;
 }
 #map {
-    float: left;
-	height: 100%;
-    width: 75%;
+    float: right;
+	height: 90%;
+    width: 40%;
 }
- #list {
+#list {
+    width: 60%;
+    float: left;
     text-align: center;
     border-bottom: 1px solid #dedede;
-    padding: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+#list img{ 
+    position: relative;
+    float: left;
+    height: 100px;
+    /*background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;*/
 }
 #list span::before { 
     display: none;
@@ -38,12 +46,6 @@ body {
     font-family: sans-serif;
     font-size: 10px;
 }
-#column img {
-    display: none;
-}
-#column {
-    flex: 90%;
-}
 }
     
 html,
@@ -55,26 +57,47 @@ body {
 	line-height: 1.5;
 }
 #map {
-    float: left;
-	height: 100%;
-    width: 80%;
+    float: right;
+	height: 89%;
+    width: 30%;
 }
 #list {
+    width: 70%;
+    float: left;
     text-align: center;
     border-bottom: 1px solid #dedede;
-    padding: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
-#list span::before { 
-    content: "\f100";
-    font-family: FontAwesome;
-    font-size: 40px;
-    float: left;
-    padding-left: 50px;
+#list p{
+    vertical-align: top;
     color: #0058a1;
+    font-weight: 800;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#list img{ 
+    position: relative;
+    float: left;
+    height: 250px;
+    /*background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;*/
+}
+#listing button{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    background-color: #4e4e4e;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
 }
 #reset {
+    width: 30%;
+    float: right;
     text-align: center;
     padding-top: 15px;
 }
@@ -88,22 +111,6 @@ body {
     color: #fff;
     font-family: sans-serif;
     font-size: 14px;
-}
-#row {
-    display: flex;
-}
-#column img {
-    height: 95%;
-    width: 80%;
-}
-#column {
-    flex: 40%;
-}
-#column a {
-	text-decoration: none;
-    color: #0058a1;
-    font-family: sans-serif;
-    font-weight: 700;
 }
 a {
 	text-decoration: none;
