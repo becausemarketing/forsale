@@ -10,7 +10,8 @@ body {
 #map {
     float: right;
 	height: 90%;
-    width: 40%;
+    width: 0%;
+    display: none;
 }
 #list {
     width: 60%;
@@ -34,6 +35,7 @@ body {
 #reset {
     text-align: center;
     padding-top: 15px;
+    display: none;
 }
 #reset button{
     padding: 5px;
