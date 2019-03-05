@@ -1,4 +1,4 @@
-@media (min-width: 300px) and (max-width: 570px) {
+@media (min-width: 100px) and (max-width: 570px) {
 html,
 body {
 	height: 100%;
@@ -8,23 +8,28 @@ body {
 	line-height: 1.5;
 }
 #map {
-    float: right;
-	height: 90%;
-    width: 0%;
     display: none;
 }
 #list {
-    width: 90%;
-    float: left;
+    width: 80%;
+    margin: auto;
+    align-content: center;
     text-align: center;
     border-bottom: 1px solid #dedede;
     padding-top: 0px;
     padding-bottom: 0px;
 }
+#list p{
+    vertical-align: top;
+    color: #0058a1;
+    font-weight: 800;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 #list img{ 
     position: relative;
     float: left;
-    height: 100px;
+    height: 200px;
     /*background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;*/
@@ -48,8 +53,11 @@ body {
     font-family: sans-serif;
     font-size: 10px;
 }
+#mapbutton {
+    display: none;
 }
-    
+}
+@media (min-width: 500px) and (max-width: 1920px){   
 html,
 body {
 	height: 100%;
@@ -118,4 +126,5 @@ a {
 	text-decoration: none;
     color: #2d2d2d;
     font-family: sans-serif;
+}
 }
