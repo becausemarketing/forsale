@@ -69,10 +69,10 @@ body {
 #map {
     float: right;
 	height: 89%;
-    width: 30%;
+    width: 45%;
 }
 #list {
-    width: 70%;
+    width: 55%;
     float: left;
     text-align: center;
     border-bottom: 1px solid #dedede;
@@ -106,7 +106,7 @@ body {
     font-size: 14px;
 }
 #reset {
-    width: 30%;
+    width: 45%;
     float: right;
     text-align: center;
     padding-top: 15px;
