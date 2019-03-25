@@ -67,12 +67,13 @@ body {
 	line-height: 1.5;
 }
 #map {
-    float: right;
-	height: 89%;
-    width: 45%;
+    vertical-align: top;
+	height: 50%;
+    width: 100%;
 }
 #list {
-    width: 55%;
+    height: 50%;
+    width: 100%;
     float: left;
     text-align: center;
     border-bottom: 1px solid #dedede;
@@ -106,7 +107,7 @@ body {
     font-size: 14px;
 }
 #reset {
-    width: 45%;
+    width: 100%;
     float: right;
     text-align: center;
     padding-top: 15px;
