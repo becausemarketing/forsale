@@ -51,7 +51,7 @@ function initMap() {
 	};
 
     var hill110 = {
-		info: '<div id="row"><div id="column"></div><div id="column"><strong>110 Hill Ave/strong><br></div></div>',
+		info: '<div id="row"><div id="column"></div><div id="column"><strong>110 Hill Ave</strong><br></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
             scaledSize: new google.maps.Size(64, 64)
