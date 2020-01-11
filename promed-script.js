@@ -4,7 +4,7 @@ function initMap() {
 		info: '<div id="row"><div id="column"></div><div id="column"><strong>704 N. Thompson Street</strong><br></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
-            scaledSize: new google.maps.Size(96, 96)
+            scaledSize: new google.maps.Size(64, 64)
         },
 		lat: 30.315419,
 		long: -95.457839 
@@ -14,7 +14,7 @@ function initMap() {
 		info: '<div id="row"><div id="column"></div><div id="column"><strong>2010 South Loop 336 West</strong><br></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
-            scaledSize: new google.maps.Size(96, 96)
+            scaledSize: new google.maps.Size(64, 64)
         },
 		lat: 30.285230,
 		long: -95.481558
@@ -24,7 +24,7 @@ function initMap() {
 		info: '<div id="row"><div id="column"></div><div id="column"><strong>800 Riverwood Court</strong><br></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
-            scaledSize: new google.maps.Size(96, 96)
+            scaledSize: new google.maps.Size(64, 64)
         },
 		lat: 30.284683,
 		long: -95.465154 
@@ -34,7 +34,7 @@ function initMap() {
 		info: '<div id="row"><div id="column"></div><div id="column"><strong>1006 South 4th Street</strong><br></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
-            scaledSize: new google.maps.Size(96, 96)
+            scaledSize: new google.maps.Size(64, 64)
         },
 		lat: 31.303973,
 		long: -95.459155  
@@ -44,7 +44,7 @@ function initMap() {
 		info: '<div id="row"><div id="column"></div><div id="column"><strong>200 NW Loop 304</strong><br></div></div>',
         icon: {
             url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
-            scaledSize: new google.maps.Size(96, 96)
+            scaledSize: new google.maps.Size(64, 64)
         },
 		lat: 31.331857 ,
 		long: -95.471048  
