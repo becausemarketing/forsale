@@ -50,6 +50,16 @@ function initMap() {
 		long: -95.471048  
 	};
 
+    var hill110 = {
+		info: '<div id="row"><div id="column"></div><div id="column"><strong>110 Hill Ave/strong><br></div></div>',
+        icon: {
+            url: 'https://dl.dropboxusercontent.com/s/ckiz5thcvohobkb/forsale.png?dl=0',
+            scaledSize: new google.maps.Size(64, 64)
+        },
+		lat: 30.593142,
+		long: -95.131412  
+	};
+    
 	var locations = [
       [thompson.info, thompson.lat, thompson.long, thompson.icon, 0],
       [sloop336.info, sloop336.lat, sloop336.long, sloop336.icon, 1],
