@@ -66,6 +66,7 @@ function initMap() {
       [riverwood.info, riverwood.lat, riverwood.long, riverwood.icon, 2],
       [fourthst.info, fourthst.lat, fourthst.long, fourthst.icon, 3],
       [loop304.info, loop304.lat, loop304.long, loop304.icon, 4],
+      [hill110.info, hill110.lat, hill110.long, hill110.icon, 5],
     ];
 
 	var map = new google.maps.Map(document.getElementById('map'), {
