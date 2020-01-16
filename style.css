@@ -79,6 +79,7 @@ body {
     border-bottom: 1px solid #dedede;
     padding-top: 0px;
     padding-bottom: 0px;
+    overflow: hidden;
 }
 #list p{
     vertical-align: top;
