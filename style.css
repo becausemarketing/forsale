@@ -61,12 +61,10 @@ body {
 html,
 body {
 	height: 80%;
-    width: 100%;
+    width: 80%;
 	margin: 0;
 	padding: 0;
 	line-height: 1.5;
-    display: flex; /*added*/
-    flex-direction: column; /*added*/
 }
 #map {
     vertical-align: top;
