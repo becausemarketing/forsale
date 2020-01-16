@@ -66,13 +66,13 @@ body {
 }
 #map {
     vertical-align: top;
-    width: 100%;
+    width: 80%;
 	height: 45%;
     box-sizing : border-box;
 }
 #list {
     height: 50%;
-    width: 100%;
+    width: 80%;
     float: left;
     text-align: center;
     border-bottom: 1px solid #dedede;
