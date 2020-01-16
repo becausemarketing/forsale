@@ -68,12 +68,12 @@ body {
 }
 #map {
     vertical-align: top;
-    width: 100%;
+    width: 100vw;
 	height: 45%;
 }
 #list {
     height: 50%;
-    width: 100%;
+    width: 100vw;
     float: left;
     text-align: center;
     /*border-bottom: 1px solid #dedede;
