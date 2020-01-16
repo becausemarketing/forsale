@@ -58,7 +58,7 @@ body {
 }
 }
 
-@media (min-width: 1080px){   
+@media screen (min-width: 1080px){   
 html,
 body {
 	height: 100%;
