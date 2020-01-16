@@ -68,7 +68,6 @@ body {
     vertical-align: top;
     width: 80%;
 	height: 45%;
-    box-sizing : border-box;
 }
 #list {
     height: 50%;
@@ -76,7 +75,6 @@ body {
     float: left;
     text-align: center;
     border-bottom: 1px solid #dedede;
-    box-sizing : border-box;
     /*padding-top: 0px;
     padding-bottom: 0px;*/
 }
