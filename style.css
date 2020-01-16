@@ -69,17 +69,14 @@ body {
 #map {
     vertical-align: top;
 	height: 45%;
-    width: 100%;
 }
 #list {
     height: 50%;
-    width: 100%;
     float: left;
     text-align: center;
     border-bottom: 1px solid #dedede;
     padding-top: 0px;
     padding-bottom: 0px;
-    overflow: hidden;
 }
 #list p{
     vertical-align: top;
