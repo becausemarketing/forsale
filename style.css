@@ -57,7 +57,7 @@ body {
     display: none;
 }
 }
-@media (min-width: 580px) {   
+@media (min-width: 580px) and (max-width: 2880px){   
 html,
 body {
 	height: 80%;
