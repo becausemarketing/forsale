@@ -58,7 +58,7 @@ body {
 }
 }
 
-@media screen (min-width: 580px){   
+@media (min-width: 500px) and (max-width: 1920px){   
 html,
 body {
 	height: 100%;
