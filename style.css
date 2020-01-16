@@ -62,8 +62,6 @@ html,
 body {
 	height: 80%;
     width: 80%;
-	margin: 0;
-	padding: 0;
 	line-height: 1.5;
 }
 #map {
@@ -75,8 +73,8 @@ body {
     float: left;
     text-align: center;
     border-bottom: 1px solid #dedede;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    /*padding-top: 0px;
+    padding-bottom: 0px;*/
 }
 #list p{
     vertical-align: top;
